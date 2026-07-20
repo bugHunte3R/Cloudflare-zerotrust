@@ -1,0 +1,22 @@
+Sanitized policy concept
+
+ALLOW POLICY
+
+Include:
+- Approved identity
+
+Require:
+- Country equals CA
+- Authentication completed
+
+Exclude:
+- IP address 203.0.113.50
+- Network 198.51.100.0/24
+
+BLOCK POLICY
+
+Include:
+- Selected unwanted country
+- Known abusive IP list
+
+Review policy order before deployment.

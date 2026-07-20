@@ -1,0 +1,25 @@
+{
+  "name": "Approved homelab administrators",
+  "decision": "allow",
+  "include": [
+    {
+      "email": {
+        "email": "administrator@example.com"
+      }
+    }
+  ],
+  "require": [
+    {
+      "geo": {
+        "country_code": "CA"
+      }
+    }
+  ],
+  "exclude": [
+    {
+      "ip": {
+        "ip": "203.0.113.50/32"
+      }
+    }
+  ]
+}

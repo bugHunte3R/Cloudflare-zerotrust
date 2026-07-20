@@ -1,0 +1,21 @@
+# Sanitized example only.
+# Never commit the real tunnel credential file.
+
+tunnel: EXAMPLE-TUNNEL-ID
+credentials-file: /etc/cloudflared/EXAMPLE-TUNNEL-ID.json
+
+protocol: http2
+
+ingress:
+  - hostname: portfolio.example.com
+    service: http://192.0.2.20:8080
+
+  - hostname: cloud.example.com
+    service: http://192.0.2.23:80
+
+  - hostname: admin.example.com
+    service: https://192.0.2.30:9443
+    originRequest:
+      noTLSVerify: false
+
+  - service: http_status:404
