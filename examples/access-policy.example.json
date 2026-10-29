@@ -11,7 +11,7 @@
   "require": [
     {
       "geo": {
-        "country_code": "CA"
+        "country_code": "XX"
       }
     }
   ],

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="380" viewBox="0 0 1100 380" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748B"/></marker></defs>
+<rect width="1100" height="380" rx="18" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="28" y="40" font-size="20" font-weight="700" fill="#0F172A">Request path through Cloudflare Access and Tunnel</text>
+<rect x="600" y="70" width="470" height="290" rx="14" fill="#ffffff" stroke="#CBD5E1" stroke-dasharray="6 5"/><text x="614" y="92" font-size="13" font-weight="600" fill="#475569">Private homelab network (10.10.10.0/24)</text>
+<line x1="170" y1="199.0" x2="210" y2="199.0" stroke="#64748B" stroke-width="2" marker-end="url(#a)"/>
+<line x1="380" y1="199.0" x2="410" y2="199.0" stroke="#64748B" stroke-width="2" marker-end="url(#a)"/>
+<line x1="580" y1="199.0" x2="630" y2="199.0" stroke="#64748B" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#a)"/>
+<line x1="820" y1="199.0" x2="870" y2="129.0" stroke="#64748B" stroke-width="2" marker-end="url(#a)"/>
+<line x1="820" y1="199.0" x2="870" y2="219.0" stroke="#64748B" stroke-width="2" marker-end="url(#a)"/>
+<line x1="725.0" y1="228" x2="955.0" y2="280" stroke="#64748B" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#a)"/>
+<rect x="30" y="170" width="140" height="58" rx="12" fill="#ffffff" stroke="#475569" stroke-width="2"/><rect x="30" y="170" width="6" height="58" rx="3" fill="#475569"/><text x="103.0" y="195.0" text-anchor="middle" font-size="15" font-weight="600" fill="#0F172A">User</text>
+<text x="103.0" y="214.0" text-anchor="middle" font-size="12" fill="#64748B">browser</text>
+<rect x="210" y="170" width="170" height="58" rx="12" fill="#ffffff" stroke="#F38020" stroke-width="2"/><rect x="210" y="170" width="6" height="58" rx="3" fill="#F38020"/><text x="298.0" y="195.0" text-anchor="middle" font-size="15" font-weight="600" fill="#0F172A">Cloudflare edge</text>
+<text x="298.0" y="214.0" text-anchor="middle" font-size="12" fill="#64748B">TLS · WAF</text>
+<rect x="410" y="170" width="170" height="58" rx="12" fill="#ffffff" stroke="#DC2626" stroke-width="2"/><rect x="410" y="170" width="6" height="58" rx="3" fill="#DC2626"/><text x="498.0" y="195.0" text-anchor="middle" font-size="15" font-weight="600" fill="#0F172A">Access policy</text>
+<text x="498.0" y="214.0" text-anchor="middle" font-size="12" fill="#64748B">identity · MFA · rules</text>
+<rect x="630" y="170" width="190" height="58" rx="12" fill="#ffffff" stroke="#16A34A" stroke-width="2"/><rect x="630" y="170" width="6" height="58" rx="3" fill="#16A34A"/><text x="728.0" y="195.0" text-anchor="middle" font-size="15" font-weight="600" fill="#0F172A">cloudflared</text>
+<text x="728.0" y="214.0" text-anchor="middle" font-size="12" fill="#64748B">LXC · 10.10.10.21</text>
+<rect x="870" y="100" width="170" height="58" rx="12" fill="#ffffff" stroke="#7C3AED" stroke-width="2"/><rect x="870" y="100" width="6" height="58" rx="3" fill="#7C3AED"/><text x="958.0" y="125.0" text-anchor="middle" font-size="15" font-weight="600" fill="#0F172A">Nextcloud</text>
+<text x="958.0" y="144.0" text-anchor="middle" font-size="12" fill="#64748B">10.10.10.30</text>
+<rect x="870" y="190" width="170" height="58" rx="12" fill="#ffffff" stroke="#2563EB" stroke-width="2"/><rect x="870" y="190" width="6" height="58" rx="3" fill="#2563EB"/><text x="958.0" y="215.0" text-anchor="middle" font-size="15" font-weight="600" fill="#0F172A">Portfolio</text>
+<text x="958.0" y="234.0" text-anchor="middle" font-size="12" fill="#64748B">10.10.10.20</text>
+<rect x="870" y="280" width="170" height="58" rx="12" fill="#ffffff" stroke="#DC2626" stroke-width="2"/><rect x="870" y="280" width="6" height="58" rx="3" fill="#DC2626"/><text x="958.0" y="305.0" text-anchor="middle" font-size="15" font-weight="600" fill="#0F172A">Admin apps</text>
+<text x="958.0" y="324.0" text-anchor="middle" font-size="12" fill="#64748B">private only</text>
+</svg>
